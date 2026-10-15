@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+body {
+    background-color: #050b14;
+    color: #00f0ff;
+    font-family: 'Share Tech Mono', monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-image: 
+        linear-gradient(rgba(0, 240, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 240, 255, 0.03) 1px, transparent 1px);
+    background-size: 20px 20px;
+}
+
+/* Glowing Cyberpunk Title */
+.title {
+    font-size: 28px;
+    letter-spacing: 4px;
+    margin-bottom: 25px;
+    color: #00f0ff;
+    text-shadow: 0 0 10px rgba(0, 240, 255, 0.7), 0 0 20px rgba(0, 240, 255, 0.3);
+    text-align: center;
+}
+
+form {
+    background: rgba(10, 20, 35, 0.95);
+    border: 2px solid #00f0ff;
+    padding: 30px;
+    box-shadow: 0 0 25px rgba(0, 240, 255, 0.3), inset 0 0 15px rgba(0, 240, 255, 0.1);
+    position: relative;
+    max-width: 400px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Robotic tag top label */
+form::before {
+    content: "[ SYS.ROBOTIC // CODING_CLUB_UNIT ]";
+    position: absolute;
+    top: -12px;
+    left: 20px;
+    background: #050b14;
+    padding: 0 10px;
+    font-size: 11px;
+    color: #00f0ff;
+    letter-spacing: 2px;
+}
+
+input[type="text"] {
+    width: 100%;
+    background: #02060c;
+    border: 1px solid #00a8b5;
+    color: #00f0ff;
+    padding: 12px;
+    margin-bottom: 15px;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 16px;
+    box-sizing: border-box;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:focus {
+    border-color: #00f0ff;
+    box-shadow: 0 0 12px rgba(0, 240, 255, 0.6);
+}
+
+input[type="text"]::placeholder {
+    color: #005f73;
+}
+
+input[type="button"] {
+    width: 100%;
+    background: linear-gradient(135deg, #004d55, #002b30);
+    border: 1px solid #00f0ff;
+    color: #00f0ff;
+    padding: 12px;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+input[type="button"]:hover {
+    background: #00f0ff;
+    color: #050b14;
+    box-shadow: 0 0 20px #00f0ff;
+}
+
+#output {
+    margin-top: 20px;
+    background: rgba(5, 11, 20, 0.95);
+    border: 1px dashed #00f0ff;
+    padding: 15px;
+    width: 370px;
+    min-height: 40px;
+    color: #00ffcc;
+    font-family: 'Share Tech Mono', monospace;
+    box-shadow: 0 0 10px rgba(0, 255, 204, 0.2);
+    word-break: break-all;
+    text-align: center;
+}
